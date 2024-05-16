@@ -108,7 +108,7 @@ select:focus {
 }
 
 .fieldSet select.dropDown.month, .fieldSet select.dropDown.year {
-    width: calc(50% - 30px);
+    width: calc(50% - 10px);
 }
 
 .formRow {
