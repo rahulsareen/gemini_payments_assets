@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "Roboto Flex", "Roboto", "Helvetica Neue", "sans-serif";
+    font-family: "Inter", "Roboto Flex", "Roboto", "Helvetica Neue", "sans-serif";
     font-size: 0.9375rem;
     font-weight: 400;
     line-height: 1.53;
@@ -21,9 +21,10 @@ body {
     font-weight: 500;
     color: #566a7f;
     margin-bottom: .5rem;
+    display: inline-block;
 }
 
-input, select {
+input {
     display: block;
     width: 100%;
     height: auto;
@@ -41,6 +42,30 @@ input, select {
     border: 1px solid #d9dee3;
     border-radius: 0.375rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+select {
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%2867, 89, 113, 0.6%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    display: block;
+    background-clip: padding-box;
+    width: 100%;
+    height: auto;
+    padding: .4375rem 1.875rem .4375rem .875rem;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.53;
+    color: #697a8d;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: var(--bs-form-select-bg-img),var(--bs-form-select-bg-icon, none);
+    background-repeat: no-repeat;
+    background-position: right .875rem center;
+    background-size: 17px 12px;
+    border: 1px solid #d9dee3;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
 
 input:hover:not([disabled]):not([focus]) {
@@ -66,7 +91,25 @@ select:focus {
 .fieldSet {
     border: none;
     padding: 0px;
-    .legend {
+    margin: 0px;
+    legend {
         display: none;
     }
+    .formRow {
+        margin: 0px;
+    }
+    select {
+        padding: 0;
+        border: 1px solid #d9dee3;
+        border-radius: 0.375rem;
+    }
+}
+
+.fieldSet select.dropDown.month, .fieldSet select.dropDown.year {
+    width: calc(50% - 30px);
+}
+
+.formRow {
+    margin: 0;
+    margin-bottom: 1rem !important;
 }
