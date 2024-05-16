@@ -101,7 +101,7 @@ select:focus {
         margin: 0px;
     }
     select {
-        padding: 0;
+        padding: .4375rem 1.875rem .4375rem .875rem;
         border: 1px solid #d9dee3;
         border-radius: 0.375rem;
     }
