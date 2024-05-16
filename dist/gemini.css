@@ -9,6 +9,7 @@ body {
     font-weight: 400;
     line-height: 1.53;
     color: #697a8d;
+    overflow: hidden;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(67,89,113,0)
 }
@@ -22,9 +23,10 @@ body {
     margin-bottom: .5rem;
 }
 
-input {
+input, select {
     display: block;
     width: 100%;
+    height: auto;
     padding: .4375rem .875rem;
     margin: 0;
     font-size: 0.9375rem;
@@ -47,6 +49,18 @@ input:hover:not([disabled]):not([focus]) {
 
 input:focus {
     border-color: #0b5997 !important;
+}
+
+select:hover:not([disabled]):not([focus]) {
+    border-color: #c7cdd4;
+}
+
+select:focus {
+    border-color: #0b5997 !important;
+}
+
+.error {
+    border-radius: 0.375rem;
 }
 
 .fieldSet {
