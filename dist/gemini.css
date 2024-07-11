@@ -23,7 +23,7 @@ body {
     font-weight: 500;
     color: #566a7f;
     margin-bottom: .5rem;
-    display: inline-block;
+    display: inline-flex;
 }
 
 input {
@@ -111,7 +111,24 @@ select:focus {
     width: calc(50% - 10px);
 }
 
+.fieldSet .requiredField {
+    order: 2;
+    margin-left: .25rem;
+}
+
+.fieldSet .field {
+    margin: 0px;
+}
+
+span .grey {
+    margin-left: .25rem;
+}
+
 .formRow {
     margin: 0;
     margin-bottom: 1rem !important;
+}
+
+.labelSeparator {
+    display: none;
 }
