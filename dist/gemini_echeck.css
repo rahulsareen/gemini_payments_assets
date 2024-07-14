@@ -45,19 +45,21 @@ body {
 .fieldSet{
     .formRow:first-of-type {
         :nth-child(1) {
-            left: 8.5%;
+            left: 2.6rem;
+            position: relative;
         }
     }
     .formRow:nth-last-child(1) {
         :nth-child(1) {
-            left: 23.5%;
+            left: 7.3rem;
+            position: relative;
         }
     }
     .formRow:nth-of-type(2) {
         margin-top: 1rem;
         :nth-child(1) {
             .requiredField {
-                left: 22.5%;
+                left: 7rem;
                 position: relative;
             }
         }
@@ -95,8 +97,8 @@ input {
 }
 
 .textBox {
-    margin-left: 1%;
-    width: 99% !important;
+    margin-left: 0.35rem;
+    width: 98% !important;
 }
 
 input:hover:not([disabled]):not([focus]) {
