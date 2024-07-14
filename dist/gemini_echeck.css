@@ -45,7 +45,7 @@ body {
 .fieldSet{
     .formRow:first-of-type {
         :nth-child(1) {
-            left: 2.6rem;
+            left: 2.8rem;
             position: relative;
         }
     }
@@ -59,7 +59,7 @@ body {
         margin-top: 1rem;
         :nth-child(1) {
             .requiredField {
-                left: 7rem;
+                left: 7.5rem;
                 position: relative;
             }
         }
@@ -98,7 +98,7 @@ input {
 
 .textBox {
     margin-left: 0.35rem;
-    width: 98% !important;
+    width: 99% !important;
 }
 
 input:hover:not([disabled]):not([focus]) {
@@ -111,7 +111,7 @@ input:focus {
 
 .validation {
     text-transform: none;
-    margin-left: 2%;
+    margin-left: 1.25%;
 }
 
 .requiredField {
