@@ -115,3 +115,7 @@ input:focus {
 .requiredField {
     position: relative;
 }
+
+.error {
+    border-radius: 0.375rem;
+}
