@@ -42,6 +42,19 @@ body {
     margin-bottom: .5rem;
 }
 
+.fieldSet{
+    .formRow:first-of-type {
+        :nth-child(1) {
+            left: 8.5%;
+        }
+    }
+    .formRow:nth-last-child(1) {
+        :nth-child(1) {
+            left: 23.5%;
+        }
+    }
+}
+
 .labelSeparator {
     display: none;
 }
@@ -82,9 +95,9 @@ input:focus {
 
 .validation {
     text-transform: none;
+    margin-left: 2%;
 }
 
 .requiredField {
     position: relative;
-    left: 9%;
 }
