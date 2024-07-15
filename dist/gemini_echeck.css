@@ -13,7 +13,7 @@ body {
     color: #697a8d;
     overflow: hidden;
     -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(67,89,113,0)
+    -webkit-tap-highlight-color: rgba(67,89,113,0);
 }
 
 .fieldSet {
@@ -40,6 +40,7 @@ body {
     font-weight: 500;
     color: #566a7f;
     margin-bottom: .5rem;
+    margin-right: .35rem;
 }
 
 .fieldSet{
@@ -51,7 +52,7 @@ body {
     }
     .formRow:nth-last-child(1) {
         :nth-child(1) {
-            left: 7.3rem;
+            left: 7.5rem;
             position: relative;
         }
     }
@@ -59,7 +60,7 @@ body {
         margin-top: 1rem;
         :nth-child(1) {
             .requiredField {
-                left: 7.5rem;
+                left: 7.3rem;
                 position: relative;
             }
         }
@@ -98,7 +99,6 @@ input {
 
 .textBox {
     margin-left: 0.35rem;
-    width: 99% !important;
 }
 
 input:hover:not([disabled]):not([focus]) {
